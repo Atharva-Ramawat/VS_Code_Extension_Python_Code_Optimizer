@@ -57,7 +57,9 @@ Optimized Code:
 
         } catch (error) {
             console.error(error);
-            vscode.window.showErrorMessage('Failed to connect to the Gemini server. Is it running?');
+            // Try to grab the exact error string your Python server sent back
+            const serverError = error.response?.data?.error || error.message;
+            vscode.window.showErrorMessage(`Optimizer Error: ${serverError}`);
         }
     });
 

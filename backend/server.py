@@ -26,7 +26,7 @@ def optimize_code():
         if not api_key:
             raise Exception("GOOGLE_API_KEY secret is not set.")
        
-        api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash-preview-09-2025:generateContent?key={api_key}"
+        api_url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={api_key}"
 
         payload = {
             "contents": [{
