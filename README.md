@@ -18,7 +18,7 @@ Powered by a fine-tuned, cloud-hosted Large Language Model (LLM) deployed via Hu
 
 ---
 
-## 📦 Installation
+# 📦 Installation
 
 You can install this extension directly from the VS Code Marketplace.
 
